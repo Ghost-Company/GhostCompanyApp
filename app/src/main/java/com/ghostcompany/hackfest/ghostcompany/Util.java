@@ -1,5 +1,10 @@
 package com.ghostcompany.hackfest.ghostcompany;
 
+
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+
 /**
  * Created by Rabbit on 7/23/2017.
  */
@@ -41,6 +46,16 @@ public class Util {
         return (dist);
     }
 
+    public static boolean isNetworkAvaiable(Context context){
+        ConnectivityManager cm =
+                (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
 
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+
+        boolean isConnected = activeNetwork != null &&
+                activeNetwork.isConnectedOrConnecting();
+
+        return isConnected;
+    }
 
 }

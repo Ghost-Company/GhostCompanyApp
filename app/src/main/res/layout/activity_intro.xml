@@ -13,10 +13,10 @@
     >
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
         android:id="@+id/introLogo"
-        android:background="@mipmap/ic_launcher"
+        android:background="@mipmap/intro"
 
         />
 </RelativeLayout>

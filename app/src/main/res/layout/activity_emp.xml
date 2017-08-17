@@ -14,7 +14,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ghostcompany.hackfest.ghostcompany.MainActivity"
+    tools:context="com.ghostcompany.hackfest.ghostcompany.EmpActivity"
     android:weightSum="1">
 
 
@@ -28,31 +28,30 @@
     -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="19dp"
+        android:layout_height="39dp"
         android:orientation="horizontal"
-        android:layout_weight="0.47"></LinearLayout>
-
+        android:layout_weight="0.00"></LinearLayout>
     <ImageView
-        android:id="@+id/ivSlider"
+        android:id="@+id/ivImg"
         android:layout_width="match_parent"
-        android:layout_height="206dp"
-        android:src="@mipmap/detective"
-        android:layout_weight="0.09" />
+        android:layout_height="116dp"
+        android:src="@mipmap/imgempdetail"
+        android:layout_weight="0.30" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="241dp"
+        android:layout_height="199dp"
         android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
-        android:layout_weight="0.00">
+        android:layout_weight="0.10">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvMainEmpresaTitulo"
+            android:id="@+id/tvDetailEmpresaTitulo"
             android:textSize="28sp"
             android:text="Testadora s.a."
             android:textAllCaps="true"
@@ -62,41 +61,19 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tvMainEmpresaCnpj"
+            android:id="@+id/tvDetailEmpresaCnpj"
             android:textSize="16sp"
             android:text="00392993840302"
-            android:layout_weight="0.22"
+            android:layout_weight="0.03"
             />
 
         <TextView
-            android:id="@+id/tvMainEmpresaEnderecoj"
+            android:id="@+id/tvDetailEmpresaEnderecoj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.22"
-            android:text=""
+            android:text="Exemplo de endereco"
             android:textSize="16sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="171dp"
-                android:layout_height="wrap_content"
-                android:text="Existe" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Não existe"
-                android:textColor="@color/colorAccent" />
-
-        </LinearLayout>
 
 
     </LinearLayout>
